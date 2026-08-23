@@ -34,6 +34,12 @@ jobs:
         run: |
           gcloud auth configure-docker us-central1-docker.pkg.dev
 
+      - name: Restore application secrets
+        run: |
+          printf '%s' "${{ secrets.APP_ENV_FILE }}" > application/.env
+          mkdir -p application/credentials
+          printf '%s' "${{ secrets.GOOGLE_SA_JSON }}" > application/credentials/datapath-ai17-edwar-micolta-fd437b5f82fd.json
+
       - name: Build and Push Docker Image
         run: |
           docker build -t ${{ env.DOCKER_IMAGE_URL }}:latest -f Dockerfile.prod .
