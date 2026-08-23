@@ -174,4 +174,5 @@ def buscar_inmuebles(criterio: str) -> str:
 
         return "\n".join(partes)
     except Exception as e:
+        print(f"   ❌ Error en buscar_inmuebles: {e!r}")
         return f"Error al consultar el sheet de inmuebles: {str(e)}"

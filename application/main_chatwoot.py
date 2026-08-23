@@ -138,7 +138,7 @@ async def chatwoot_webhook(request: Request):
     labels = conversation.get('labels', [])
     message_content = data.get('content')
     conversation_id = conversation.get('id')
-    sender = data.get('sender', {})
+    sender = data.get('sender') or {}
     sender_type = sender.get('type', '')
     
     # Debug
