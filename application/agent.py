@@ -51,6 +51,7 @@ from tools.Google_Sheets import (
     consultar_total_inquilino,
     consultar_desglose_inquilino,
 )
+from tools.Inmuebles_Sheets import buscar_inmuebles
 
 # Histórico de conversación (PostgreSQL)
 from conversation_history import crear_tabla_historial, get_session_history
@@ -64,6 +65,7 @@ tools = [
     obtener_fecha_hora,             # Fecha y hora actual por zona horaria
     consultar_total_inquilino,      # Total mensual de un inquilino (Google Sheets)
     consultar_desglose_inquilino,   # Desglose de la cuota de un inquilino (Google Sheets)
+    buscar_inmuebles,               # Búsqueda de inmuebles en alquiler (Google Sheets #2)
 ]
 
 # ============================================

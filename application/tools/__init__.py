@@ -10,6 +10,7 @@ from tools.Google_Sheets import (
     consultar_total_inquilino,
     consultar_desglose_inquilino,
 )
+from tools.Inmuebles_Sheets import buscar_inmuebles
 
 # Lista de todas las tools disponibles
 __all__ = [
@@ -18,4 +19,5 @@ __all__ = [
     "obtener_fecha_hora",
     "consultar_total_inquilino",
     "consultar_desglose_inquilino",
+    "buscar_inmuebles",
 ]

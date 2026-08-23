@@ -2,7 +2,7 @@
 gcloud init
 
 ## Paso 1: Creación del repositorio
-gcloud artifacts repositories create repositorio-backend-langchain-inmobiliaria --repository-format docker --project datapath-kevin-inofuentecolque --location us-central1
+gcloud artifacts repositories create repositorio-backend-langchain-inmobiliaria --repository-format docker --project datapath-ai17-edwar-micolta --location us-central1
 
 ## Paso 2: Crear la imagen de mi APLICACION y subir al repositorio
 gcloud builds submit --config=cloudbuild.yaml --project datapath-kevin-inofuentecolque
