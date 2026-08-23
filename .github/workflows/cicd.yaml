@@ -46,6 +46,7 @@ jobs:
             --image ${{ env.DOCKER_IMAGE_URL }}:latest \
             --platform managed \
             --region us-central1 \
+            --port=4000 \
             --allow-unauthenticated \
             --service-account=langchain-agente-inmobiliaria@datapath-ai17-edwar-micolta.iam.gserviceaccount.com
             
